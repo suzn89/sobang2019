@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>소방안전정보시스템 포털(트리구조 마크업)</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">  
+  <script src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="http://cdn.dcodes.net/2/menus/tree/js/dc_tree_menu.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/custom.js"></script> 
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/top_logo.png" alt=""></a></h1>
+
+    <nav class="header__nav">
+      <ul>
+        <li class="active"><a href="#">보고서</a></li>
+        <li><a href="#">상황판</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">검색</a></li>
+        <li><a href="#">게시판</a></li>
+      </ul>
+    </nav>
+
+    <ul class="header__info">
+      <li><span class="bonbu">전남소방본부</span><span class="username">테스트사용자</span>님 접속중입니다.</li>
+      <li><a href="#" class="btn__logout">로그아웃</a></li>
+    </ul>
+  </header> <!-- // header -->
+
+  <div class="containerWrap">
+    <div class="leftNav">
+      <div class="leftNav__title">
+        <h2>게시판</h2>
+      </div><!-- // leftNav__title -->
+      <button type="button" class="btn_toggleSnb panelbtn"><img src="images/btn_snb.jpg" alt=""></button>
+      <div class="leftNav__2depth">
+        <ul id="dc_treemenu">
+          <li><a href="#">Company</a>
+            <ul>
+              <li><a href="#">About Us</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Job Opportunities</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Investor Relations</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Products</a>
+            <ul>
+              <li><a href="#">Software</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Hardware</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Software</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Research</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Support</a>
+            <ul>
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a></li>
+              <li><a href="#">Third link</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Fourth link</a></li>
+              <li><a href="#">Fifth link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Web Store</a>
+            <ul>
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a></li>
+              <li><a href="#">Third link</a></li>
+              <li><a href="#">Fourth link</a></li>
+              <li><a href="#">Fifth link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact Us</a>
+            <ul>
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Third link</a></li>
+              <li><a href="#">Fourth link</a>
+                <ul>
+                  <li><a href="#">First link</a></li>
+                  <li><a href="#">Second link</a></li>
+                  <li><a href="#">Third link</a></li>
+                  <li><a href="#">Fourth link</a></li>
+                  <li><a href="#">Fifth link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Fifth link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div> <!-- // leftNav__2depth -->
+    </div><!-- // leftNav -->
+
+    <div class="contentWrap">
+      <h4 class="contentWrap__top">고객분석 > 입원환자분석</h4>
+      <h3 class="contentWrap__title">건축분야/방화구획대상 및 불법건축물현황(상관관관계없음)</h3>
+      <div class="contentWrap__search searchBox">
+        <div class="searchBox__item">
+          <span class="title">본부</span>
+          <select name="" id="" title="해당항목선택">
+            <option value="">선택 1</option>
+            <option value="">선택 2</option>
+            <option value="">선택 3</option>
+          </select>
+        </div> <!-- // searchBox__item-->
+        <div class="searchBox__item">
+          <span class="title">기간 구분</span>
+          <select name="" id="" title="해당항목선택">
+            <option value="">연간집계</option>
+            <option value="">선택 2</option>
+            <option value="">선택 3</option>
+          </select>
+        </div> <!-- // searchBox__item-->
+        <div class="searchBox__item">
+          <label for="text1" class="title">인풋텍스트</label>
+          <input type="text" id="text1">
+        </div>
+        <div class="searchBox__item">
+          <a href="#" class="search">조회</a>
+        </div>
+      </div> <!-- // contentWrap__search -->
+      <div class="contentWrap__contents">
+        가나다라 컨텐츠 삽입 부분
+      </div>
+    </div> <!-- // contentWrap -->
+  </div> <!-- // containerWrap -->
+
+  <footer class="footer">
+    <p>COPYRIGHT ⓒ 2017 National Fire Agency All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

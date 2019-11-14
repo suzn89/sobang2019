@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>소방안전정보시스템 포털(패널 고정)</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/custom.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__logo"><a href="#"><img src="images/top_logo.png" alt=""></a></h1>
+
+    <nav class="header__nav">
+      <ul>
+        <li class="active"><a href="#">보고서</a></li>
+        <li><a href="#">상황판</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">검색</a></li>
+        <li><a href="#">게시판</a></li>
+      </ul>
+    </nav>
+
+    <ul class="header__info">
+      <li><span class="bonbu">전남소방본부</span><span class="username">테스트사용자</span>님 접속중입니다.</li>
+      <li><a href="#" class="btn__logout">로그아웃</a></li>
+    </ul>
+  </header> <!-- // header -->
+  
+  <div class="containerWrap">
+    <div class="leftNav">
+      <div class="leftNav__title">
+        <h2>게시판</h2>        
+      </div><!-- // leftNav__title -->      
+      <div class="leftNav__2depth">
+        <ul class="nontree">
+          <li class="on"><a href="#">공지사항</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">묻고답하기</a></li>
+        </ul>
+      </div> <!-- // leftNav__2depth -->
+    </div><!-- // leftNav -->
+    
+    <div class="contentWrap">      
+      <h3 class="contentWrap__title">사용자 등록</h3>  
+      <div class="contentWrap__contents">
+        <div class="item">
+          <table class="table_type1">
+              <caption></caption>
+              <colgroup>
+                  <col style="width:121px;">
+                  <col>
+              </colgroup>
+              <tbody>
+                  <tr>
+                      <th scope="row">사번</th>
+                      <td>
+                          <input type="text" value="456789" disabled>                          
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">이름</th>
+                      <td>
+                          <input type="text">                          
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">비밀번호</th>
+                      <td>
+                          <input type="password">   
+                          <p class="refer">* 숫자,문자, 특수문자 조합 9자리이상 입력하세요
+                          </p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">비밀번호 확인</th>
+                      <td>
+                          <input type="password">   
+                          <p class="refer">* 숫자,문자, 특수문자 조합 9자리이상 입력하세요
+                          </p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">생년월일</th>
+                      <td>
+                        <div class="box_calendar">
+                          <input type="text" title="날짜선택" name="" id="" class="ipt_text">  
+                          <button class="btn_cal"><span class="ir">날짜선택</span></button>          
+                        </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+        </div> <!-- // item -->
+        <hr class="padding">
+        <div class="item">
+          <div class="btn_wrap">
+            <button class="btn">사용자 등록</button>
+            <button class="btn color2">공인인증서 등록</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- // contentWrap -->
+  </div> <!-- // containerWrap -->
+  
+  <footer class="footer">
+    <p>(c) 2019 Fire Safety Information System All rights reserved.</p>
+  </footer>
+</body>
+</html>
