@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>소방안전정보시스템 포털</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">  
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
   <script src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/prefixfree.min.js"></script>
+  <script src="js/slick.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.bannerzone').bxSlider({
+        auto: true,
+        autoControls: true,
+        stopAutoOnClick: true,
+        pager: true,
+        slideWidth: 375,
+        controls: false
+      });
+    });     
+  </script>
 </head>
+
 <body>
   <header class="header">
     <h1 class="header__logo"><a href="#"><img src="images/top_logo.png" alt=""></a></h1>
@@ -30,95 +50,146 @@
       <li><a href="#" class="btn__logout">로그아웃</a></li>
     </ul>
   </header> <!-- // header -->
-  <div class="mainWrap">
-    <div class="left">
-      <div class="boardList">
-        <div class="boardList__top">
-          <h2 class="boardList__tit notice">공지사항</h2>
-          <a href="#"><span class="ir">더보기</span></a>
-        </div><!-- // boardList__top -->
-        <div class="boardList__list">
-          <ul>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-          </ul>
-        </div> <!-- // boardList__list -->
-      </div><!-- // boardList -->
-      <div class="boardList">
-        <div class="boardList__top">
-          <h2 class="boardList__tit inquiry">묻고 답하기</h2>
-          <a href="#"><span class="ir">더보기</span></a>
-        </div><!-- // boardList__top -->
-        <div class="boardList__list">
-          <ul>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-          </ul>
-        </div> <!-- // boardList__list -->
-      </div><!-- // boardList -->
-      <div class="boardList">
-        <div class="boardList__top">
-          <h2 class="boardList__tit dashboard">상황판</h2>
-          <a href="#"><span class="ir">더보기</span></a>
-        </div><!-- // boardList__top -->
-        <div class="boardList__list">
-          <ul>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-          </ul>
-        </div> <!-- // boardList__list -->
-      </div><!-- // boardList -->
-      <div class="boardList">
-        <div class="boardList__top">
-          <h2 class="boardList__tit faq">FAQ</h2>
-          <a href="#"><span class="ir">더보기</span></a>
-        </div><!-- // boardList__top -->
-        <div class="boardList__list">
-          <ul>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-            <li><a class="title">공지사항 제목 노출입니다. 공지사항 제목노출 입니다.</a><span class="date">2019-11-02</span></li>
-          </ul>
-        </div> <!-- // boardList__list -->
-      </div><!-- // boardList -->
-    </div> <!-- // left -->
-    <div class="right">
-      <div class="quickMenu">
-        <h2 class="quickMenu__tit">서비스 바로가기</h2>
-        <ul class="quickMenu__list">
-          <li><a href="#"><span class="circle"><img src="images/quick_01.png" alt="화재안전특별조사"></span>화재안전 특별조사</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_02.png" alt="소방민원센터"></span>소방민원센터</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_03.png" alt="국가긴급이송 정보망"></span>국가긴급이송 정보망</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_04.png" alt="119 구급상황관리 시스템"></span>119 구급상황관리 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_05.png" alt="구조구급 활동정보 시스템"></span>구조구급 활동정보 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_06.png" alt="소방 민원정보 시스템"></span>소방 민원정보 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_07.png" alt="소방 장비관리 시스템"></span>소방 장비관리 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_08.png" alt="중앙 인사 시스템"></span>중앙 인사 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_09.png" alt="소방학교"></span>소방학교</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_10.png" alt="공공헬기 운항정보"></span>공공헬기 운항정보</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_11.png" alt="중앙119출동지원 시스템"></span>중앙119출동지원 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_12.png" alt="소방 현장통합관리 시스템"></span>소방 현장통합관리 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_13.png" alt="국가화재정보 시스템"></span>국가화재정보 시스템</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_14.png" alt="119 통합상황관리 연계"></span>119 통합상황관리 연계</a></li>
-          <li><a href="#"><span class="circle"><img src="images/quick_15.png" alt="시도 포탈 연계(소방)"></span>시도 포탈 연계(소방)</a></li>
+  <div id="_wrap" class="_main">
+    <div class="godash">
+      <div class="godash__box">
+        <h2>소방안전정보</h2>
+        <ul>
+          <li><a href="#"><img src="images/quick_01.png" alt="긴급구조">긴급구조</a></li>
+          <li><a href="#"><img src="images/quick_06.png" alt="교육">교육</a></li>
+          <li><a href="#"><img src="images/quick_02.png" alt="구급활동">구급활동</a></li>
+          <li><a href="#"><img src="images/quick_07.png" alt="소방민원">소방민원</a></li>
+          <li><a href="#"><img src="images/quick_03.png" alt="구조활동">구조활동</a></li>
+          <li><a href="#"><img src="images/quick_08.png" alt="장비관리">장비관리</a></li>
+          <li><a href="#"><img src="images/quick_04.png" alt="국가긴급이송
+            정보망">국가긴급이송<br>정보망</a></li>
+          <li><a href="#"><img src="images/quick_09.png" alt="공공헬기">공공헬기</a></li>
+          <li><a href="#"><img src="images/quick_05.png" alt="인사행정">인사행정</a></li>
+          <li><a href="#"><img src="images/quick_10.png" alt="국가화재정보">국가화재정보</a></li>
         </ul>
+      </div> <!-- // godash__box -->
+    </div> <!-- // godash -->
+    <div class="gomenu">
+      <h2>주요메뉴 바로가기</h2>
+      <ul>
+        <li><a href="#"><img src="images/gomenu_01.png">오픈 API</a></li>
+        <li><a href="#"><img src="images/gomenu_02.png">오픈 API 활용</a></li>
+        <li><a href="#"><img src="images/gomenu_03.png">키워드 검색</a></li>
+        <li><a href="#"><img src="images/gomenu_04.png">보고서</a></li>
+      </ul>
+    </div> <!-- // gomenu -->
+    <div id="_vis">
+      <div class="_roll">
+        <span class="_vis" style="background-image:url(images/vis1.png);" href="#">
+          <p class="maintitle"><span class="pointcolor">SAFE KOREA</span>를 만드는 내일의 밑거름</p>
+          <p class="subtext">우리의 안전생활과 함께할 새로워진 소방안전정보시스템을 소개합니다.</p>
+          <img src="images/vis-dummy.gif" alt="" class="__p" />
+        </span>
+        <span class="_vis" style="background-image:url(images/vis2.png);" href="#" target='_blank'>
+          <p class="maintitle"><span class="pointcolor">SAFE KOREA</span>를 만드는 내일의 밑거름</p>
+          <p class="subtext">추가 텍스트를 입력하세요. 삭제도 가능합니다.우리의 안전생활과 함께할 새로워진 소방안전정보시스템을 소개합니다.</p>
+          <img src="images/vis-dummy.gif" alt="" class="__p" />
+        </span>
+        <span class="_vis" style="background-image:url(images/vis3.png);" href="#" target='_blank'>
+          <p class="maintitle"><span class="pointcolor">SAFE KOREA</span>를 만드는 내일의 밑거름</p>
+          <p class="subtext">추가 텍스트를 입력하세요. 삭제도 가능합니다.</p>
+          <img src="images/vis-dummy.gif" alt="" class="__p" />
+        </span>
       </div>
-    </div> <!-- // right -->
-  </div> <!-- // mainWrap -->
-  
+      <script>
+        vis.init();
+      </script>
+    </div> <!-- // vis -->
+
+    <div class="board__wrap">
+      <div class="board">
+        <div class="board__notice">
+          <ul class="tab">
+            <li><a href="#" class="on">공지사항</a></li>
+          </ul>
+          <div class="notice">
+            <div>
+              <ul>
+                <li><a href="#" target="_self"><span class="cate">[안내]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a> <span
+                    class="date">2019-11-15</span></li>
+                <li><a href="#" target="_self"><span class="cate">[안내]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a> <span
+                    class="date">2019-11-15</span></li>
+                <li><a href="#" target="_self"><span class="cate">[안내]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a> <span
+                    class="date">2019-11-15</span></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- // board__notice -->
+        <div class="board__etc">
+          <ul class="tab">
+            <li><a href="#" class="on">자주묻는 질문</a></li>
+            <li><a href="#">문의하기</a></li>
+          </ul>
+          <div class="content">
+            <div style="display:block;">
+              <ul>
+                <li><a href="#" target="_self"><span class="cate">[보고서]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+                <li><a href="#" target="_self"><span class="cate">[상황판]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+                <li><a href="#" target="_self"><span class="cate">[회원가입]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#" target="_self"><span class="cate">[회원가입]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+                <li><a href="#" target="_self"><span class="cate">[회원가입]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+                <li><a href="#" target="_self"><span class="cate">[회원가입]</span>공지사항 테스트 글입니다. 공지사항 테스트 글입니다.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- // board__notice -->
+
+        <div class="board__banner">
+          <h2>팝업알리미</h2>
+          <div class="bannerzone">
+            <div><img src="images/bannerimg01.png"></div>
+            <div><img src="images/bannerimg02.png"></div>
+            <div><img src="images/bannerimg03.png"></div>
+          </div>
+        </div> <!-- // board__banner -->
+      </div> <!-- // board -->
+    </div> <!-- // board__wrap -->
+
+  </div> <!-- // wrap end -->
+
+  <div class="site">
+    <h3>관련사이트<br>바로가기</h3>
+    <div class="gosite">
+      <div><a href="#" target="_blank"><img src="images/banner_01.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_02.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_03.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_04.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_05.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_06.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_07.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_08.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_09.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_10.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_11.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_12.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_13.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_14.png" alt="바로가기"></a></div>
+    </div>
+  </div> <!-- // site -->
+  <script>
+    $(document).ready(function(){
+      $('.gosite').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:true
+      });
+    });   
+  </script>  
+
   <footer class="footer">
     <p>(c) 2019 Fire Safety Information System All rights reserved.</p>
   </footer>
 </body>
+
 </html>

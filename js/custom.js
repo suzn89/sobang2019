@@ -18,5 +18,45 @@ $(document).ready(function(){
         panelOpen=true;
       });
     }
-  });  
+	});
+	
+	// main tab
+	var tab = $('.board__etc .tab > li');
+	var content = $('.content > div');
+	
+	tab.on('click',function(e){
+		e.preventDefault();
+		var tg = $(this);
+		var tc = tg.find('a');
+		tab.find('>a').removeClass('on');
+		tc.addClass('on');
+		i = tg.index();
+		content.css('display','none');
+		content.eq(i).css('display','block');
+	});	//a에 거는거니까 preventDefault씀
+  
 });
+
+//VISUAL
+var vis = {
+	init : function(){
+			this.action();
+	},
+	action : function(){
+			var roll = $('#_vis ._roll');
+			roll.bxSlider({
+					mode: 'fade',
+					auto: true,
+					useCSS: false,
+					autoControls: true,
+					autoControlsCombine: true,
+					controls: false,
+					pause: 5000,
+					speed: 1500,
+					touchEnabled : false,
+					stopAutoOnClick: true,
+					easing: 'easeInOutExpo'
+			});
+	}
+}
+
