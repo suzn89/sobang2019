@@ -2,7 +2,7 @@
 /* color theme */
 body {
   background: #f3f3f3;
-  min-width: 1902px;
+  min-width: 1400px;
 }
 
 /* 로그인 화면 */
@@ -10,19 +10,18 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../images/login_bg.png);
-  background-size: cover;
+  background: #2A3540;
 }
 
 .login__box {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -52%);
-          transform: translate(-50%, -52%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 470px;
   padding: 88px 80px;
-  background: rgba(43, 54, 64, 0.5);
+  background: #F3F3F3;
   border-radius: 8px;
   text-align: center;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
