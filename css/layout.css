@@ -203,17 +203,18 @@ body {
 
 #_wrap {
   position: relative;
-  height: 870px;
+  height: calc(100vh - 100px);
+  min-height: 870px;
 }
 
 #_wrap .godash {
   position: absolute;
   top: 35px;
-  left: 50%;
+  right: 50%;
   width: 290px;
   background: #314558;
   z-index: 999;
-  margin-left: 630px;
+  margin-right: 650px;
   overflow: hidden;
 }
 
@@ -400,7 +401,7 @@ body {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 870px !important;
+  height: calc(100vh - 100px) !important;
   cursor: default;
 }
 
@@ -488,7 +489,7 @@ body {
 }
 
 #_vis .bx-viewport {
-  height: 870px !important;
+  height: calc(100vh - 100px) !important;
 }
 
 #_vis .bx-wrapper .bx-pager {
@@ -678,54 +679,29 @@ body {
 }
 
 .site {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  width: 220px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+  margin-left: 650px;
   overflow: hidden;
-  width: 1240px;
-  margin: 0 auto;
-  padding: 20px 0 50px;
-}
-
-.site h3 {
-  float: left;
-  width: 140px;
-  color: #464646;
-  font-size: 16px;
-  line-height: 1.1;
 }
 
 .site .gosite {
   float: left;
-  width: 1100px;
   margin-left: -5px;
   margin-right: -5px;
 }
 
-.site .gosite .slick-prev {
-  width: 20px;
-  height: 20px;
-  text-indent: -999em;
-  position: absolute;
-  left: -135px;
-  bottom: -6px;
-  background: url(../images/roll_prev.png) no-repeat;
-  background-size: 100%;
-  z-index: 999;
+.site .gosite li + li {
+  margin-top: 7px;
 }
 
-.site .gosite .slick-next {
-  width: 20px;
-  height: 20px;
-  text-indent: -999em;
-  position: absolute;
-  left: -117px;
-  bottom: -6px;
-  background: url(../images/roll_next.png) no-repeat;
-  background-size: 100%;
-  z-index: 999;
-}
-
-.site .gosite .slick-slide {
-  margin-left: 10px;
-  margin-right: 10px;
+.site .gosite img {
+  width: 200px;
 }
 
 .containerWrap {

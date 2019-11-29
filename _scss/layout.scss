@@ -158,15 +158,16 @@ body {
 }  // header 
 #_wrap {
   position:relative;
-  height:870px;
+  height:calc(100vh - 100px);
+  min-height: 870px;
   .godash {
     position: absolute;
     top: 35px;
-    left:50%;
+    right:50%;
     width:290px;
     background: #314558;
     z-index: 999;
-    margin-left: 630px;
+    margin-right: 650px;
     overflow: hidden;
     h2 {
       position:relative;
@@ -332,7 +333,7 @@ body {
     background-position:50% 0;
     background-repeat:no-repeat;
     background-size:cover;
-    height:870px !important;
+    height:calc(100vh - 100px) !important;
     cursor:default;
   }
 
@@ -416,7 +417,7 @@ body {
     display:inline-block;
   }
   .bx-viewport {
-    height:870px !important;
+    height:calc(100vh - 100px) !important;
   }
   .bx-wrapper .bx-pager {
     text-align:center;
@@ -575,48 +576,25 @@ body {
   }
 }
 .site {
-  overflow: hidden;
-  width: 1240px;
-  margin: 0 auto;
-  padding: 20px 0 50px;
-  h3 {
-    float:left;
-    width: 140px;
-    color: #464646;
-    font-size: 16px;
-    line-height: 1.1;
-  }
+  position: absolute;
+    top: 35px;
+    left:50%;    
+    width: 220px;
+    padding: 15px;
+    background: rgba($color:#ffffff, $alpha:0.7);
+    z-index: 999;
+    margin-left: 650px;
+    overflow: hidden;
   .gosite {
-    float: left;
-    width: 1100px;
+    float: left;    
     margin-left: -5px;
     margin-right: -5px;
-    .slick-prev {
-      width: 20px;
-      height: 20px;
-      text-indent: -999em;
-      position: absolute;
-      left: -135px;
-      bottom: -6px;
-      background: url(../images/roll_prev.png) no-repeat;
-      background-size: 100%;
-      z-index: 999;
+    li + li {
+      margin-top: 7px;
     }
-    .slick-next {
-      width: 20px;
-      height: 20px;
-      text-indent: -999em;
-      position: absolute;
-      left: -117px;
-      bottom: -6px;
-      background: url(../images/roll_next.png) no-repeat;
-      background-size: 100%;
-      z-index: 999;
+    img {
+      width: 200px;
     }
-    .slick-slide {
-      margin-left: 10px;
-      margin-right: 10px;
-    }    
   }
 }
 .containerWrap {

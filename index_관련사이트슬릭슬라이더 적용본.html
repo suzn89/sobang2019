@@ -69,26 +69,6 @@
         </ul>
       </div> <!-- // godash__box -->
     </div> <!-- // godash -->
-    
-    <div class="site">    
-      <div class="gosite">
-        <li><a href="#" target="_blank"><img src="images/banner_01.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_02.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_03.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_04.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_05.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_06.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_07.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_08.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_09.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_10.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_11.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_12.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_13.png" alt="바로가기"></a></li>
-        <li><a href="#" target="_blank"><img src="images/banner_14.png" alt="바로가기"></a></li>
-      </div>
-    </div> <!-- // site -->
-
     <div class="gomenu">
       <h2>주요메뉴 바로가기</h2>
       <ul>
@@ -175,6 +155,37 @@
     </div> <!-- // board__wrap -->
 
   </div> <!-- // wrap end -->
+
+  <div class="site">
+    <h3>관련사이트<br>바로가기</h3>
+    <div class="gosite">
+      <div><a href="#" target="_blank"><img src="images/banner_01.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_02.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_03.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_04.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_05.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_06.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_07.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_08.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_09.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_10.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_11.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_12.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_13.png" alt="바로가기"></a></div>
+      <div><a href="#" target="_blank"><img src="images/banner_14.png" alt="바로가기"></a></div>
+    </div>
+  </div> <!-- // site -->
+  <script>
+    $(document).ready(function(){
+      $('.gosite').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:true
+      });
+    });   
+  </script>  
 
   <footer class="footer">
     <p>(c) 2019 Fire Safety Information System All rights reserved.</p>
